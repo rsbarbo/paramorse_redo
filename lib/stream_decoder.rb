@@ -22,10 +22,10 @@ module ParaMorse
         word.split("000").map do |letter|
           letter.slice!(0) if letter.start_with?("0")
           letter.chop! if  letter.end_with?("0")
-          words << word_decoder.decode(letter)
+          word_decoder.decode(letter)
         end
-        binding.pry
-      end
+      end.join
+
     end
 
   end
