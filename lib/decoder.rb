@@ -1,11 +1,6 @@
-require "pry"
-require_relative 'letter_decoder'
-require_relative 'queue'
-
 module ParaMorse
 
   class Decoder
-
     attr_reader :letter_decoder, :queue
 
     def initialize
@@ -14,44 +9,46 @@ module ParaMorse
     end
 
     def decode(morse_code)
-      morse_code.split("000").map do |letter|
-        letter_decoder.decode(letter)
+      morse_code.split("0000000").map do |word|
+        word.split("000").map do |letter|
+          letter_decoder.decode(letter)
+        end
       end.join
     end
 
-    def queue_ends_with_space?(queue)
-      queue.count >= 3 && queue.tail(3).join() === "000"
+      def queue_ends_with_space?(queue)
+        queue.count >= 3 && queue.tail(3).join() === "000"
+      end
+
+      def end_of_morse_code_message?(index, morse_code)
+        morse_code.length - 1 == index
+      end
     end
 
-    def end_of_morse_code_message?(index, morse_code)
-      morse_code.length - 1 == index
-    end
   end
 
-end
-
-#   binding.pry
-#   decoded_word = ""
-#   morse_code.each_char.with_index do |digit, index|
-#     queue.push(digit)
-#     if queue_ends_with_space?(queue)
-#       encoded_letter = get_next_letter(queue)
-#     elsif end_of_morse_code_message?(index, morse_code)
-#       encoded_letter = get_last_letter(queue)
-#     end
-#     if encoded_letter
-#       decoded_word += letter_decoder.decode(encoded_letter)
-#       queue.clear
-#     end
-#   end
-#   return decoded_word
-# end
+  #   binding.pry
+  #   decoded_word = ""
+  #   morse_code.each_char.with_index do |digit, index|
+  #     queue.push(digit)
+  #     if queue_ends_with_space?(queue)
+  #       encoded_letter = get_next_letter(queue)
+  #     elsif end_of_morse_code_message?(index, morse_code)
+  #       encoded_letter = get_last_letter(queue)
+  #     end
+  #     if encoded_letter
+  #       decoded_word += letter_decoder.decode(encoded_letter)
+  #       queue.clear
+  #     end
+  #   end
+  #   return decoded_word
+  # end
 
 
-# def get_last_letter(queue)
-#   queue.peek(queue.count).join
-# end
+  # def get_last_letter(queue)
+  #   queue.peek(queue.count).join
+  # end
 
-# def get_next_letter(queue)
-#   encoded_letter = queue.peek(queue.count - 3).join
-# end
+  # def get_next_letter(queue)
+  #   encoded_letter = queue.peek(queue.count - 3).join
+  # end

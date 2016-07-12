@@ -1,5 +1,6 @@
 require_relative 'helper_test'
 require_relative '../lib/decoder'
+require_relative '../lib/letter_decoder'
 
 class DecoderTest < Minitest::Test
 
@@ -34,12 +35,9 @@ class DecoderTest < Minitest::Test
     morse_code2.each_char do |digit|
       q2.push(digit)
     end
-    expected1 = true
-    actual1 = decoder.queue_ends_with_space?(q)
-    expected2 = false
-    actual2 = decoder.queue_ends_with_space?(q2)
-    assert_equal expected1, actual1
-    assert_equal expected2, actual2
+    assert_equal true, decoder.queue_ends_with_space?(q)
+    assert_equal false, decoder.queue_ends_with_space?(q2)
+
   end
 
   def test_it_knows_if_queue_is_at_end_of_message
