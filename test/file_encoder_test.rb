@@ -10,5 +10,4 @@ class FileEncoderTest < Minitest::Test
     assert_equal result.length, file_enc.encode("test/test_1.txt", "test/test_2.txt")
   end
 
-
 end

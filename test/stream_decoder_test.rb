@@ -108,12 +108,23 @@ class StreamDecoderTest < Minitest::Test
     stream.receive("0")
     stream.receive("1")
     stream.receive("0")
+    stream.receive("0")
+    stream.receive("0")
+    stream.receive("1")
+    stream.receive("0")
+    stream.receive("1")
+    stream.receive("0")
+    stream.receive("1")
+    stream.receive("0")
     stream.receive("1")
     stream.receive("0")
     stream.receive("0")
     stream.receive("0")
     stream.receive("1")
-    assert_equal "HI HE", stream.decode
+    stream.receive("0")
+    stream.receive("0")
+    stream.receive("0")
+    assert_equal "HI SHE", stream.decode
   end
 
 end
