@@ -68,8 +68,7 @@ class QueueTest < Minitest::Test
     q.push('0')
     q.push('1')
     q.push('1')
-    expected = '1'
-    assert_equal expected, q.pop
+    assert_equal '1', q.pop
   end
 
   def test_it_can_pop
