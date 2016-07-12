@@ -18,8 +18,14 @@ module ParaMorse
     end
 
     def joiner(outcome)
-      return outcome.join(" ") if outcome.count > 1
+      return sorter(outcome) if outcome.count > 1
       return outcome.join if outcome.count <= 1
+    end
+
+    def sorter(outcome)
+      result = outcome.map do |word|
+        word.join
+      end.join(" ")
     end
 
     def queue_ends_with_space?(queue)
