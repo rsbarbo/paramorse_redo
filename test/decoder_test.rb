@@ -17,55 +17,38 @@ class DecoderTest < Minitest::Test
   end
 
   def test_it_can_grab_next_letter
-    skip
-    decoder = Decoder.new
-    q = Queue.new
-    q2 = Queue.new
-    morse_code = "101110111000"
-    expected = "101110111"
-    morse_code.each_char do |digit|
-      q.push(digit)
-    end
-
-    actual1 = decoder.get_next_letter(q)
-
-    assert_equal actual1, expected
+    decoder = ParaMorse::Decoder.new
+    q = ParaMorse::Queue.new
+    assert_equal "W",decoder.decode("101110111000")
   end
 
   def test_it_knows_if_queue_ends_with_a_space
-    skip
-    decoder = Decoder.new
-    q = Queue.new
-    q2 = Queue.new
+    decoder = ParaMorse::Decoder.new
+    q = ParaMorse::Queue.new
+    q2 = ParaMorse::Queue.new
     morse_code = "101110111000"
     morse_code2 = "101110111"
-
     morse_code.each_char do |digit|
       q.push(digit)
     end
     morse_code2.each_char do |digit|
       q2.push(digit)
     end
-
     expected1 = true
     actual1 = decoder.queue_ends_with_space?(q)
     expected2 = false
     actual2 = decoder.queue_ends_with_space?(q2)
-
     assert_equal expected1, actual1
     assert_equal expected2, actual2
   end
 
   def test_it_knows_if_queue_is_at_end_of_message
-    skip
-    decoder = Decoder.new
+    decoder = ParaMorse::Decoder.new
     morse_code = "101"
     expected = [false, false, true]
-
     actual = morse_code.each_char.map.with_index do |digit, index|
       decoder.end_of_morse_code_message?(index, morse_code)
     end
-
     assert_equal expected, actual
   end
 

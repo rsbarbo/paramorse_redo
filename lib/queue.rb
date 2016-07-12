@@ -5,43 +5,43 @@ module ParaMorse
   class Queue
 
     def initialize
-      @list = Array.new
+      @queue = Array.new
     end
 
     def count
-      @list.count
+      @queue.count
     end
 
     def push(digit)
-      @list << digit
+      @queue << digit
     end
 
     def tail(*number)
       if number.length > 0
-        @list[(number.first * -1)..-1].reverse
+        @queue[(number.first * -1)..-1].reverse
       else
-        @list.last
+        @queue.last
       end
     end
 
     def peek(*number)
       if number.length > 0
-        @list[0..(number.first - 1)]
+        @queue[0..(number.first - 1)]
       else
-        @list.first
+        @queue.first
       end
     end
 
     def pop(*number)
       if number.length > 0
-        @list.pop(number.first)
+        @queue.pop(number.first)
       else
-        @list.pop
+        @queue.pop
       end
     end
 
     def clear
-      @list.clear
+      @queue.clear
     end
   end
 
