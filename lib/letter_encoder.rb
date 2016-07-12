@@ -8,7 +8,7 @@ module ParaMorse
     def encode(letter)
       dictionary[letter.upcase]
     end
-
+    
     def dictionary_length
       dictionary
     end

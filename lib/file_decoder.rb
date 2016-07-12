@@ -3,7 +3,6 @@ require "./lib/paramorse"
 module ParaMorse
 
   class FileDecoder
-
     attr_reader :decoder
 
     def initialize
