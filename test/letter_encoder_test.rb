@@ -4,11 +4,7 @@ require_relative '../lib/letter_encoder'
 class LetterEncoderTest < Minitest::Test
   def test_it_loads_encodable_module
     letter_encoder = ParaMorse::LetterEncoder.new
-
-    expected = 37
-    actual = letter_encoder.dictionary_length.keys.length
-
-    assert_equal expected, actual
+    assert_equal 37, letter_encoder.dictionary_length.keys.length
   end
 
   def test_it_can_encode_the_letters_a_and_q
