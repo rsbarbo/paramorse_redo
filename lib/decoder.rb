@@ -16,13 +16,13 @@ module ParaMorse
       end.join
     end
 
-      def queue_ends_with_space?(queue)
-        queue.count >= 3 && queue.tail(3).join() === "000"
-      end
-
-      def end_of_morse_code_message?(index, morse_code)
-        morse_code.length - 1 == index
-      end
+    def queue_ends_with_space?(queue)
+      queue.count >= 3 && queue.tail(3).join() === "000"
     end
 
+    def end_of_morse_code_message?(index, morse_code)
+      morse_code.length - 1 == index
+    end
   end
+
+end
