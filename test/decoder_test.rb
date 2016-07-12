@@ -25,31 +25,4 @@ class DecoderTest < Minitest::Test
     assert_equal "W",decoder.decode("101110111000")
   end
 
-  def test_it_knows_if_queue_ends_with_a_space
-    decoder = ParaMorse::Decoder.new
-    q = ParaMorse::Queue.new
-    q2 = ParaMorse::Queue.new
-    morse_code = "101110111000"
-    morse_code2 = "101110111"
-    morse_code.each_char do |digit|
-      q.push(digit)
-    end
-    morse_code2.each_char do |digit|
-      q2.push(digit)
-    end
-    assert_equal true, decoder.queue_ends_with_space?(q)
-    assert_equal false, decoder.queue_ends_with_space?(q2)
-
-  end
-
-  def test_it_knows_if_queue_is_at_end_of_message
-    decoder = ParaMorse::Decoder.new
-    morse_code = "101"
-    expected = [false, false, true]
-    actual = morse_code.each_char.map.with_index do |digit, index|
-      decoder.end_of_morse_code_message?(index, morse_code)
-    end
-    assert_equal expected, actual
-  end
-
 end
