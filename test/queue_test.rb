@@ -73,7 +73,7 @@ class QueueTest < Minitest::Test
     assert_equal 4, q.count
   end
 
-  def test_it_can_pop_one
+  def test_it_can_pop_multiple
     q = ParaMorse::Queue.new
     q.push('1')
     q.push('0')
