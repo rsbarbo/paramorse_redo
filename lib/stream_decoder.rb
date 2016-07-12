@@ -18,15 +18,20 @@ module ParaMorse
 
     def decode
       prepared = @queue.join
-      prepared.split("0000000").map do |word|
+      variable = prepared.split("0000000").map do |word|
         word.split("000").map do |letter|
           letter.slice!(0) if letter.start_with?("0")
           letter.chop! if  letter.end_with?("0")
           word_decoder.decode(letter)
-        end
-      end.join
-
+        end.join
+      end
+      something(variable)
     end
+
+    def something
+      #enter you code here
+    end
+
 
   end
 end
