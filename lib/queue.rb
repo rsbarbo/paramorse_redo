@@ -13,7 +13,6 @@ module ParaMorse
     end
 
     def push(digit)
-      binding.pry
       @list << digit
     end
 
@@ -33,7 +32,7 @@ module ParaMorse
       end
     end
 
-    def pop(number)
+    def pop(*number)
       if number.length > 0
         @list.pop(number.first)
       else
