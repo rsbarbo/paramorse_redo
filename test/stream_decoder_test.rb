@@ -1,4 +1,4 @@
-require_relative 'helper_test'
+require './test/helper_test'
 require "./lib/stream_decoder"
 require "./lib/queue"
 require "./lib/letter_decoder"

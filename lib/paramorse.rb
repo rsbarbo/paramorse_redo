@@ -1,11 +1,11 @@
-require_relative "encodable"
-require_relative "decoder"
-require_relative "encoder"
-require_relative "letter_decoder"
-require_relative "letter_encoder"
-require_relative "stream_decoder"
-require_relative "queue"
+require "./lib/encodable"
+require "./lib/decoder"
+require "./lib/encoder"
+require "./lib/letter_decoder"
+require "./lib/letter_encoder"
+require "./lib/stream_decoder"
+require "./lib/queue"
 
 module ParaMorse
-  
+
 end

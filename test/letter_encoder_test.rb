@@ -1,5 +1,5 @@
-require_relative 'helper_test'
-require_relative '../lib/letter_encoder'
+require './test/helper_test'
+require './lib/letter_encoder'
 
 class LetterEncoderTest < Minitest::Test
   def test_it_loads_encodable_module

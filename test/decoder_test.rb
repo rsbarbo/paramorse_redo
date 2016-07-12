@@ -1,7 +1,7 @@
-require_relative 'helper_test'
-require_relative '../lib/decoder'
-require_relative '../lib/letter_decoder'
-require_relative '../lib/queue'
+require './test/helper_test'
+require './lib/decoder'
+require './lib/letter_decoder'
+require './lib/queue'
 
 
 class DecoderTest < Minitest::Test

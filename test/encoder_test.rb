@@ -1,6 +1,6 @@
-require_relative 'helper_test'
-require_relative '../lib/encoder'
-require_relative '../lib/paramorse'
+require './test/helper_test'
+require './lib/encoder'
+require './lib/paramorse'
 
 class EncoderTest < Minitest::Test
   def test_it_can_encode_a_word

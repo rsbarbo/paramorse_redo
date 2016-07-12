@@ -1,4 +1,4 @@
-require_relative 'encodable'
+require './lib/encodable'
 
 module ParaMorse
 

@@ -1,5 +1,5 @@
-require_relative 'helper_test'
-require_relative '../lib/queue'
+require './test/helper_test'
+require './lib/queue'
 
 class QueueTest < Minitest::Test
 
