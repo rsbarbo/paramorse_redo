@@ -4,7 +4,7 @@ module ParaMorse
 
   class StreamDecoder
     attr_reader :words
-    attr_accessor :queue, :letter_decoder
+    attr_accessor :queue, :word_decoder
 
     def initialize
       @queue = ParaMorse::Queue.new.queue
@@ -14,11 +14,18 @@ module ParaMorse
 
     def receive(input)
       @queue.push(input)
-
     end
 
     def decode
-
+      prepared = @queue.join
+      prepared.split("0000000").map do |word|
+        word.split("000").map do |letter|
+          letter.slice!(0) if letter.start_with?("0")
+          letter.chop! if  letter.end_with?("0")
+          words << word_decoder.decode(letter)
+        end
+        binding.pry
+      end
     end
 
   end

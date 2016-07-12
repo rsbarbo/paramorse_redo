@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-12T00:15:52-06:00">2016-07-12T00:15:52-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-12T01:00:56-06:00">2016-07-12T01:00:56-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">70.37%</span></span>
+    (<span class="covered_percent"><span class="red">78.16%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.0
+         3.24
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>8</b> files in total.
-    <b>81</b> relevant lines. 
-    <span class="green"><b>57</b> lines covered</span> and
-    <span class="red"><b>24</b> lines missed </span>
+    <b>87</b> relevant lines. 
+    <span class="green"><b>68</b> lines covered</span> and
+    <span class="red"><b>19</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,22 +52,22 @@
       
       <tr>
         <td class="strong"><a href="#9d42672b2f8b3a764bfa185f3d6db6b811909048" class="src_link" title="lib/decoder.rb">lib/decoder.rb</a></td>
-        <td class="red strong">64.29 %</td>
+        <td class="yellow strong">85.71 %</td>
         <td>54</td>
         <td>14</td>
-        <td>9</td>
-        <td>5</td>
-        <td>0.8</td>
+        <td>12</td>
+        <td>2</td>
+        <td>3.9</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#e178a47ffc5d015dc5c78421a8488316216d0b05" class="src_link" title="lib/encodable.rb">lib/encodable.rb</a></td>
-        <td class="red strong">66.67 %</td>
+        <td class="green strong">100.0 %</td>
         <td>26</td>
         <td>3</td>
-        <td>2</td>
-        <td>1</td>
-        <td>0.7</td>
+        <td>3</td>
+        <td>0</td>
+        <td>4.7</td>
       </tr>
       
       <tr>
@@ -82,12 +82,12 @@
       
       <tr>
         <td class="strong"><a href="#738384687ee017c8437395cc0392fde12f68294f" class="src_link" title="lib/letter_decoder.rb">lib/letter_decoder.rb</a></td>
-        <td class="red strong">75.0 %</td>
+        <td class="yellow strong">87.5 %</td>
         <td>17</td>
         <td>8</td>
-        <td>6</td>
-        <td>2</td>
-        <td>0.8</td>
+        <td>7</td>
+        <td>1</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
@@ -117,17 +117,17 @@
         <td>22</td>
         <td>11</td>
         <td>11</td>
-        <td>0.7</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#79449f2f557bceeac7773b5f43906d8822e43e9d" class="src_link" title="lib/stream_decoder.rb">lib/stream_decoder.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>25</td>
-        <td>12</td>
-        <td>12</td>
+        <td>31</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
-        <td>2.4</td>
+        <td>8.5</td>
       </tr>
       
     </tbody>
@@ -149,11 +149,11 @@
         <div class="source_table" id="9d42672b2f8b3a764bfa185f3d6db6b811909048">
   <div class="header">
     <h3>lib/decoder.rb</h3>
-    <h4><span class="red">64.29 %</span> covered</h4>
+    <h4><span class="yellow">85.71 %</span> covered</h4>
     <div>
       <b>14</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -196,14 +196,14 @@
           <code class="ruby">    def initialize</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="7">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="7">
+          <span class="hits">6</span>
           
           <code class="ruby">      @letter_decoder = ParaMorse::LetterDecoder.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="8">
+          <span class="hits">6</span>
           
           <code class="ruby">      @queue = ParaMorse::Queue.new</code>
         </li>
@@ -232,14 +232,14 @@
           <code class="ruby">      morse_code.split(&quot;0000000&quot;).map do |word|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="12" data-linenumber="13">
+          <span class="hits">12</span>
           
           <code class="ruby">        word.split(&quot;000&quot;).map do |letter|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
+        <li class="covered" data-hits="12" data-linenumber="14">
+          <span class="hits">12</span>
           
           <code class="ruby">          letter_decoder.decode(letter)</code>
         </li>
@@ -250,8 +250,8 @@
           <code class="ruby">        end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
+        <li class="covered" data-hits="12" data-linenumber="16">
+          <span class="hits">12</span>
           
           <code class="ruby">      end.join</code>
         </li>
@@ -491,11 +491,11 @@
         <div class="source_table" id="e178a47ffc5d015dc5c78421a8488316216d0b05">
   <div class="header">
     <h3>lib/encodable.rb</h3>
-    <h4><span class="red">66.67 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>3</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -634,8 +634,8 @@
           <code class="ruby"> &quot;8&quot; =&gt; &quot;111011101110101&quot;, &quot;9&quot; =&gt; &quot;11101110111011101&quot;,</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
-          
+        <li class="covered" data-hits="12" data-linenumber="23">
+          <span class="hits">12</span>
           
           <code class="ruby"> &quot;0&quot; =&gt; &quot;1110111011101110111&quot;}</code>
         </li>
@@ -755,11 +755,11 @@
         <div class="source_table" id="738384687ee017c8437395cc0392fde12f68294f">
   <div class="header">
     <h3>lib/letter_decoder.rb</h3>
-    <h4><span class="red">75.0 %</span> covered</h4>
+    <h4><span class="yellow">87.5 %</span> covered</h4>
     <div>
       <b>8</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -814,8 +814,8 @@
           <code class="ruby">    def decode(code)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="12" data-linenumber="9">
+          <span class="hits">12</span>
           
           <code class="ruby">      dictionary.key(code)</code>
         </li>
@@ -1126,8 +1126,8 @@
           <code class="ruby">    def initialize</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="7">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="14" data-linenumber="7">
+          <span class="hits">14</span>
           
           <code class="ruby">      @queue = Array.new</code>
         </li>
@@ -1345,8 +1345,8 @@
     <h3>lib/stream_decoder.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1408,20 +1408,20 @@
           <code class="ruby">    def initialize</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
           
           <code class="ruby">      @queue = ParaMorse::Queue.new.queue</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="11">
+          <span class="hits">6</span>
           
           <code class="ruby">      @word_decoder = ParaMorse::Decoder.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="12">
+          <span class="hits">6</span>
           
           <code class="ruby">      @words = []</code>
         </li>
@@ -1444,8 +1444,8 @@
           <code class="ruby">    def receive(input)</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="16">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="74" data-linenumber="16">
+          <span class="hits">74</span>
           
           <code class="ruby">      @queue.push(input)</code>
         </li>
@@ -1453,52 +1453,88 @@
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">    def decode</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="5" data-linenumber="20">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      prepared = @queue.join</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="covered" data-hits="5" data-linenumber="21">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      prepared.split(&quot;0000000&quot;).map do |word|</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="22">
+          <span class="hits">7</span>
+          
+          <code class="ruby">        word.split(&quot;000&quot;).map do |letter|</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="23">
+          <span class="hits">12</span>
+          
+          <code class="ruby">          letter.slice!(0) if letter.start_with?(&quot;0&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="24">
+          <span class="hits">12</span>
+          
+          <code class="ruby">          letter.chop! if  letter.end_with?(&quot;0&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="25">
+          <span class="hits">12</span>
+          
+          <code class="ruby">          @word_decoder.decode(letter)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">end</code>
