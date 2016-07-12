@@ -1,7 +1,6 @@
 require './lib/encodable'
 
 module ParaMorse
-
   class LetterEncoder
     include Encodable
 

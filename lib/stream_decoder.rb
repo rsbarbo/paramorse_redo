@@ -1,7 +1,4 @@
-require "pry"
-
 module ParaMorse
-
   class StreamDecoder
     attr_reader :words
     attr_accessor :queue, :word_decoder

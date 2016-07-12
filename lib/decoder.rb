@@ -1,5 +1,4 @@
 module ParaMorse
-
   class Decoder
     attr_reader :letter_decoder, :queue
 

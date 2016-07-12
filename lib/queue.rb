@@ -1,5 +1,4 @@
 module ParaMorse
-
   class Queue
     attr_accessor :queue
 
