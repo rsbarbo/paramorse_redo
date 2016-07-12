@@ -18,9 +18,7 @@ module ParaMorse
     end
 
     def decode
-       @queue
 
-      word_decoder
     end
 
   end
