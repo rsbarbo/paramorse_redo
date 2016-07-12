@@ -3,45 +3,40 @@ require 'pry'
 module ParaMorse
 
   class Queue
+    attr_accessor :queue
 
     def initialize
       @queue = Array.new
     end
 
+    def push(*element)
+      element.map do |e|
+        queue.unshift(e.upcase)
+      end
+      queue
+    end
+
     def count
-      @queue.count
+      queue.size
     end
 
-    def push(digit)
-      @queue << digit
+    def peek(index = nil)
+      return queue.last if index == nil
+      queue[-index .. - 1]
     end
 
-    def tail(*number)
-      if number.length > 0
-        @queue[(number.first * -1)..-1].reverse
-      else
-        @queue.last
-      end
+    def pop(number = nil)
+      return queue.pop if number == nil
+      queue.pop(number)
     end
 
-    def peek(*number)
-      if number.length > 0
-        @queue[0..(number.first - 1)]
-      else
-        @queue.first
-      end
-    end
-
-    def pop(*number)
-      if number.length > 0
-        @queue.pop(number.first)
-      else
-        @queue.pop
-      end
+    def tail(index = nil)
+      return queue.first if index == nil
+      queue.take(index)
     end
 
     def clear
-      @queue.clear
+      queue.clear
     end
   end
 

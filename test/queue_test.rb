@@ -57,8 +57,8 @@ class QueueTest < Minitest::Test
     q.push('0')
     q.push('1')
     q.push('1')
-    expected = ['1', '0', '0']
-    assert_equal expected, q.peek(3)
+    expected = ['0', '1']
+    assert_equal expected, q.peek(2)
   end
 
   def test_it_can_pop_one
@@ -81,7 +81,7 @@ class QueueTest < Minitest::Test
     q.push('1')
     q.push('1')
     q.pop
-    assert_equal ['0', '0', '1'], q.pop(3)
+    assert_equal ['1','0', '0'], q.pop(3)
     assert_equal 1, q.count
   end
 
@@ -110,7 +110,6 @@ class QueueTest < Minitest::Test
     q.push('1')
     expected1 = 5
     expected2 = 0
-
     assert_equal expected1, q.count
     q.clear
     assert_equal expected2, q.count
