@@ -13,5 +13,5 @@ module ParaMorse
       dictionary
     end
   end
-  
+
 end
