@@ -2,15 +2,16 @@ require_relative 'encodable'
 
 module ParaMorse
 
-class LetterEncoder
-  include Encodable
+  class LetterEncoder
+    include Encodable
 
-  def encode(letter)
-    dictionary[letter.downcase]
-  end
+    def encode(letter)
+      dictionary[letter.downcase]
+    end
 
-  def dictionary_length
-    dictionary
+    def dictionary_length
+      dictionary
+    end
   end
 
 end

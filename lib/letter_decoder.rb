@@ -2,15 +2,16 @@ require_relative 'encodable'
 
 module ParaMorse
 
-class LetterDecoder
-  include Encodable
+  class LetterDecoder
+    include Encodable
 
-  def decode(code)
-    dictionary.key(code)
+    def decode(code)
+      dictionary.key(code)
+    end
+
+    def dictionary_length
+      dictionary
+    end
   end
-
-  def dictionary_length
-    dictionary
-  end
-
+  
 end
