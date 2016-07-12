@@ -1,3 +1,6 @@
+require "./lib/queue"
+require "./lib/decoder"
+
 module ParaMorse
   class StreamDecoder
     attr_reader :words

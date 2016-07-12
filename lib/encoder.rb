@@ -1,3 +1,5 @@
+require "./lib/letter_encoder"
+
 module ParaMorse
   class Encoder
 

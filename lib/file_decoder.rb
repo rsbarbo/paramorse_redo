@@ -1,3 +1,7 @@
+require "./lib/decoder"
+require "./lib/letter_decoder"
+require "./lib/queue"
+
 module ParaMorse
   class FileDecoder
     attr_reader :decoder
@@ -12,7 +16,6 @@ module ParaMorse
       File.write(plain_text, output)
     end
   end
-
 end
 
 file_enc = ParaMorse::FileDecoder.new

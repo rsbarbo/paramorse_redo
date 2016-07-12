@@ -1,3 +1,5 @@
+require "./lib/encoder"
+
 module ParaMorse
   class FileEncoder
     attr_reader :encoder

@@ -2,7 +2,6 @@ require './test/helper_test'
 require "./lib/stream_decoder"
 require "./lib/queue"
 require "./lib/letter_decoder"
-require "./lib/paramorse"
 
 
 class StreamDecoderTest < Minitest::Test

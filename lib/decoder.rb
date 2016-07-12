@@ -26,6 +26,6 @@ module ParaMorse
         word.join
       end.join(" ")
     end
-  end
 
+  end
 end
