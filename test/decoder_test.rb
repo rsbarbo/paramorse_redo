@@ -4,18 +4,15 @@ require_relative '../lib/decoder'
 class DecoderTest < Minitest::Test
 
   def test_it_can_decode_morse_code
-    decoder = Decoder.new
-    morse_code1 = "1011101110001110111011100010111010001110101"
+    decoder = ParaMorse::Decoder.new
+    input = "1011101110001110111011100010111010001110101"
     expected = "WORD"
-
-    actual = decoder.decode(morse_code1)
-
-    assert_equal expected, actual
+    assert_equal expected, decoder.decode(input)
   end
 
   def test_it_can_grab_last_letter
-    decoder = Decoder.new
-    q = Queue.new
+    decoder = ParaMorse::Decoder.new
+    q = ParaMorse::Queue.new
     q.push
     morse_code = "101110111"
     expected = morse_code

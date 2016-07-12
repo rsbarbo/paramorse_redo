@@ -1,3 +1,4 @@
+require "pry"
 require_relative 'encodable'
 
 module ParaMorse
@@ -6,7 +7,7 @@ module ParaMorse
     include Encodable
 
     def encode(letter)
-      dictionary[letter.downcase]
+      dictionary[letter.upcase]
     end
 
     def dictionary_length
