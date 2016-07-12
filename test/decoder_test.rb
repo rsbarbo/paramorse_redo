@@ -15,13 +15,11 @@ class DecoderTest < Minitest::Test
 
   def test_it_can_grab_last_letter
     decoder = ParaMorse::Decoder.new
-    q = ParaMorse::Queue.new
     assert_equal "W" ,decoder.decode("101110111")
   end
 
   def test_it_can_grab_next_letter
     decoder = ParaMorse::Decoder.new
-    q = ParaMorse::Queue.new
     assert_equal "W",decoder.decode("101110111000")
   end
 
