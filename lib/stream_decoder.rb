@@ -28,8 +28,12 @@ module ParaMorse
       something(variable)
     end
 
-    def something
-      #enter you code here
+    def something(variable)
+      if variable.count > 1
+        variable.join(" ")
+      elsif variable.count <= 1
+        variable.join
+      end
     end
 
 

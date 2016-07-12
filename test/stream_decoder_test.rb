@@ -48,7 +48,7 @@ class StreamDecoderTest < Minitest::Test
     stream.receive("0")
     stream.receive("0")
     stream.receive("1")
-    assert_equal "EE", stream.decode
+    assert_equal "E E", stream.decode
   end
 
   def test_can_divide_letters
