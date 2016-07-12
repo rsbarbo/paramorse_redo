@@ -1,5 +1,7 @@
 require_relative 'letter_encoder'
 
+module ParaMorse
+
 class Encoder
 
   def encode(word)

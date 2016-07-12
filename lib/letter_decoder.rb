@@ -1,5 +1,7 @@
 require_relative 'encodable'
 
+module ParaMorse
+
 class LetterDecoder
   include Encodable
 

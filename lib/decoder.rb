@@ -1,6 +1,8 @@
 require_relative 'letter_decoder'
 require_relative 'queue'
 
+module ParaMorse
+
 class Decoder
 
   def decode(morse_code)
