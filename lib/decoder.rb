@@ -1,3 +1,4 @@
+require "pry"
 require_relative 'letter_decoder'
 require_relative 'queue'
 
@@ -5,9 +6,14 @@ module ParaMorse
 
   class Decoder
 
+attr_reader :letter_decoder, :queue
+
+def initialize
+  @letter_decoder = ParaMorse::LetterDecoder.new
+  @queue = ParaMorse::Queue.new
+end
+
     def decode(morse_code)
-      letter_decoder = ParaMorse::LetterDecoder.new
-      queue = ParaMorse::Queue.new
       decoded_word = ""
       morse_code.each_char.with_index do |digit, index|
         queue.push(digit)

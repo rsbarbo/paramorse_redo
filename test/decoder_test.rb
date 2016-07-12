@@ -13,19 +13,11 @@ class DecoderTest < Minitest::Test
   def test_it_can_grab_last_letter
     decoder = ParaMorse::Decoder.new
     q = ParaMorse::Queue.new
-    q.push
-    morse_code = "101110111"
-    expected = morse_code
-    morse_code.each_char do |digit|
-      q.push(digit)
-    end
-
-    actual1 = decoder.get_last_letter(q)
-
-    assert_equal expected, actual1
+    assert_equal "W" ,decoder.decode("101110111")
   end
 
   def test_it_can_grab_next_letter
+    skip
     decoder = Decoder.new
     q = Queue.new
     q2 = Queue.new
@@ -41,6 +33,7 @@ class DecoderTest < Minitest::Test
   end
 
   def test_it_knows_if_queue_ends_with_a_space
+    skip
     decoder = Decoder.new
     q = Queue.new
     q2 = Queue.new
@@ -64,6 +57,7 @@ class DecoderTest < Minitest::Test
   end
 
   def test_it_knows_if_queue_is_at_end_of_message
+    skip
     decoder = Decoder.new
     morse_code = "101"
     expected = [false, false, true]
