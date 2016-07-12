@@ -61,27 +61,28 @@ class QueueTest < Minitest::Test
     assert_equal expected, q.peek(3)
   end
 
-  def test_it_can_pop
+  def test_it_can_pop_one
     q = ParaMorse::Queue.new
     q.push('1')
     q.push('0')
     q.push('0')
     q.push('1')
     q.push('1')
-    assert_equal '1', q.pop
+    assert_equal 5, q.count
+    assert_equal "1", q.pop
+    assert_equal 4, q.count
   end
 
-  def test_it_can_pop
+  def test_it_can_pop_one
     q = ParaMorse::Queue.new
     q.push('1')
     q.push('0')
     q.push('0')
     q.push('1')
     q.push('1')
-    expected1 = "1"
-    expected2 = ['0', '0', '1']
-    assert_equal expected1, q.pop
-    assert_equal expected2, q.pop(3)
+    q.pop
+    assert_equal ['0', '0', '1'], q.pop(3)
+    assert_equal 1, q.count
   end
 
   def test_pop_adjusts_count
