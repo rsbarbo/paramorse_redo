@@ -25,7 +25,6 @@ module ParaMorse
           word_decoder.decode(letter)
         end
       end.join
-
     end
 
   end

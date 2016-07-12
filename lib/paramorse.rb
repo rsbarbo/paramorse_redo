@@ -8,4 +8,7 @@ require_relative "queue"
 
 module ParaMorse
 
+#how to create the final call for file IO
+#space between letters, any idea?
+
 end
