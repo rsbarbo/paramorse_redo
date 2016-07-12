@@ -9,11 +9,17 @@ module ParaMorse
     end
 
     def decode(morse_code)
-      morse_code.split("0000000").map do |word|
+      outcome = morse_code.split("0000000").map do |word|
         word.split("000").map do |letter|
           letter_decoder.decode(letter)
         end
-      end.join
+      end
+      joiner(outcome)
+    end
+
+    def joiner(outcome)
+      return outcome.join(" ") if outcome.count > 1
+      return outcome.join if outcome.count <= 1
     end
 
     def queue_ends_with_space?(queue)
