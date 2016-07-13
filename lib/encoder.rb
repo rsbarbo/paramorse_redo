@@ -1,3 +1,5 @@
+
+require "pry"
 require "./lib/letter_encoder"
 
 module ParaMorse
