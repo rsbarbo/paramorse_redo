@@ -1,20 +1,20 @@
 require './test/helper_test'
-require "./lib/stream_decoder"
+require "./lib/streamer"
 require "./lib/queue"
 require "./lib/letter_decoder"
 
 
-class StreamDecoderTest < Minitest::Test
+class StreamerTest < Minitest::Test
 
   def test_can_receive_input
-    stream = ParaMorse::StreamDecoder.new
+    stream = ParaMorse::Streamer.new
     queue = ParaMorse::Queue.new
     stream.receive("0")
     assert_equal ["0"], stream.queue
   end
 
   def test_can_receive_multiple_inputs
-    stream = ParaMorse::StreamDecoder.new
+    stream = ParaMorse::Streamer.new
     queue = ParaMorse::Queue.new
     stream.receive("1")
     stream.receive("0")
@@ -37,7 +37,7 @@ class StreamDecoderTest < Minitest::Test
   end
 
   def test_can_divide_words
-    stream = ParaMorse::StreamDecoder.new
+    stream = ParaMorse::Streamer.new
     stream.receive("1")
     stream.receive("0")
     stream.receive("0")
@@ -51,7 +51,7 @@ class StreamDecoderTest < Minitest::Test
   end
 
   def test_can_divide_letters
-    stream = ParaMorse::StreamDecoder.new
+    stream = ParaMorse::Streamer.new
     stream.receive("1")
     stream.receive("0")
     stream.receive("0")
@@ -61,7 +61,7 @@ class StreamDecoderTest < Minitest::Test
   end
 
   def test_can_decode_one_streamed_word
-    stream = ParaMorse::StreamDecoder.new
+    stream = ParaMorse::Streamer.new
     stream.receive("0")
     stream.receive("1")
     stream.receive("0")
@@ -80,7 +80,7 @@ class StreamDecoderTest < Minitest::Test
   end
 
   def test_can_decode_multiple_streamed_words
-    stream = ParaMorse::StreamDecoder.new
+    stream = ParaMorse::Streamer.new
     stream.receive("1")
     stream.receive("0")
     stream.receive("1")

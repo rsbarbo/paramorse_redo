@@ -1,8 +1,9 @@
+require "pry"
 require "./lib/queue"
 require "./lib/decoder"
 
 module ParaMorse
-  class StreamDecoder
+  class Streamer
     attr_reader :words
     attr_accessor :queue, :word_decoder
 

@@ -551,7 +551,8 @@
         null,
         null
       ],
-      "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/lib/stream_decoder.rb": [
+      "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/lib/streamer.rb": [
+        1,
         1,
         1,
         null,
@@ -594,7 +595,7 @@
         null
       ]
     },
-    "timestamp": 1468367804
+    "timestamp": 1468437808
   },
   "RSpec": {
     "coverage": {
