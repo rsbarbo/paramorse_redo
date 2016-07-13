@@ -22,6 +22,11 @@ module ParaMorse
         "Please make sure your input is binary numbers"
       else
         prepared = @queue.join
+        pre_join_outcome(prepared)
+      end
+    end
+
+    def pre_join_outcome(prepared)
         outcome = prepared.split("0000000").map do |word|
           word.split("000").map do |letter|
             letter.slice!(0) if letter.start_with?("0")
@@ -31,7 +36,6 @@ module ParaMorse
         end
         joiner(outcome)
       end
-    end
 
     def joiner(outcome)
       if outcome.count > 1
