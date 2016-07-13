@@ -12,7 +12,7 @@ class FileEncoderTest < Minitest::Test
 
   def test_create_new_files
     file_enc = ParaMorse::FileEncoder.new
-    assert_equal "",file_enc.encode("test/test_1.txt", 2, "test/test_2.txt")
+    assert_equal 111,file_enc.encode("test/test_1.txt",11, "test/test_2.txt")
   end
 
 end
