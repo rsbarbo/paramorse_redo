@@ -302,6 +302,12 @@
         null,
         null
       ],
+      "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/test/para_decoder_test.rb": [
+
+      ],
+      "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/test/para_encoder_test.rb": [
+
+      ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/test/queue_test.rb": [
         1,
         1,
@@ -656,7 +662,7 @@
         null
       ]
     },
-    "timestamp": 1468440473
+    "timestamp": 1468442632
   },
   "RSpec": {
     "coverage": {

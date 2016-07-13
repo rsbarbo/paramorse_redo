@@ -27,15 +27,15 @@ module ParaMorse
     end
 
     def pre_join_outcome(prepared)
-        outcome = prepared.split("0000000").map do |word|
-          word.split("000").map do |letter|
-            letter.slice!(0) if letter.start_with?("0")
-            letter.chop! if  letter.end_with?("0")
-            word_decoder.decode(letter)
-          end.join
-        end
-        joiner(outcome)
+      outcome = prepared.split("0000000").map do |word|
+        word.split("000").map do |letter|
+          letter.slice!(0) if letter.start_with?("0")
+          letter.chop! if  letter.end_with?("0")
+          word_decoder.decode(letter)
+        end.join
       end
+      joiner(outcome)
+    end
 
     def joiner(outcome)
       if outcome.count > 1
