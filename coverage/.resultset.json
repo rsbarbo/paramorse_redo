@@ -241,19 +241,32 @@
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/lib/file_encoder.rb": [
         1,
-        null,
-        1,
-        1,
         1,
         null,
         1,
+        1,
+        1,
+        null,
+        1,
+        3,
+        null,
+        null,
+        1,
+        3,
+        3,
+        3,
         3,
         null,
         null,
         1,
         3,
         3,
-        3,
+        22,
+        2,
+        null,
+        20,
+        null,
+        null,
         null,
         null,
         1,
@@ -690,7 +703,7 @@
         null
       ]
     },
-    "timestamp": 1468449318
+    "timestamp": 1468451391
   },
   "RSpec": {
     "coverage": {
