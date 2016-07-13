@@ -143,13 +143,28 @@ class StreamerTest < Minitest::Test
     assert_equal "Please make sure your input is english like", stream.encode
   end
 
-  def test_encode_streamed_letters
+  def test_encode_streamed_letter_with_one_word
     stream = ParaMorse::Streamer.new
     stream.receive("l")
     stream.receive("o")
     stream.receive("v")
     stream.receive("e")
     outcome = "101110101000111011101110001010101110001"
+    assert_equal outcome, stream.encode
+  end
+
+  def test_encode_streamed_letter_with_mult_words
+    stream = ParaMorse::Streamer.new
+    stream.receive("l")
+    stream.receive("o")
+    stream.receive("v")
+    stream.receive("e")
+    stream.receive(" ")
+    stream.receive("y")
+    stream.receive("o")
+    stream.receive("u")
+
+    outcome = "10111010100011101110111000101010111000100000001110101110111000111011101110001010111"
     assert_equal outcome, stream.encode
   end
 
