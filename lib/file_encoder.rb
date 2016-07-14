@@ -63,6 +63,3 @@ module ParaMorse
 
   end
 end
-
-file_enc = ParaMorse::FileEncoder.new
-# file_enc.encode("plain.txt", 11, "output*.txt")

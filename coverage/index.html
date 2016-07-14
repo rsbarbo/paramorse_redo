@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-13T19:15:15-06:00">2016-07-13T19:15:15-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-13T19:33:11-06:00">2016-07-13T19:33:11-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.91
+         6.4
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>18</b> files in total.
-    <b>450</b> relevant lines. 
-    <span class="green"><b>450</b> lines covered</span> and
+    <b>449</b> relevant lines. 
+    <span class="green"><b>449</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -57,7 +57,7 @@
         <td>17</td>
         <td>17</td>
         <td>0</td>
-        <td>9.3</td>
+        <td>17.0</td>
       </tr>
       
       <tr>
@@ -67,7 +67,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>30.0</td>
+        <td>135.7</td>
       </tr>
       
       <tr>
@@ -77,7 +77,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>8.3</td>
+        <td>36.3</td>
       </tr>
       
       <tr>
@@ -93,11 +93,11 @@
       <tr>
         <td class="strong"><a href="#ede1a73fcb317c15c36ed37e4cfbc84df44bf07d" class="src_link" title="lib/file_encoder.rb">lib/file_encoder.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>68</td>
-        <td>39</td>
-        <td>39</td>
+        <td>65</td>
+        <td>38</td>
+        <td>38</td>
         <td>0</td>
-        <td>3.4</td>
+        <td>18.7</td>
       </tr>
       
       <tr>
@@ -107,7 +107,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>5.0</td>
+        <td>16.6</td>
       </tr>
       
       <tr>
@@ -117,7 +117,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>7.5</td>
+        <td>35.5</td>
       </tr>
       
       <tr>
@@ -326,14 +326,14 @@
           <code class="ruby">      outcome = morse_code.split(&quot;0000000&quot;).map do |word|</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="12">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="37" data-linenumber="12">
+          <span class="hits">37</span>
           
           <code class="ruby">        word.split(&quot;000&quot;).map do |letter|</code>
         </li>
       
-        <li class="covered" data-hits="29" data-linenumber="13">
-          <span class="hits">29</span>
+        <li class="covered" data-hits="122" data-linenumber="13">
+          <span class="hits">122</span>
           
           <code class="ruby">          letter_decoder.decode(letter)</code>
         </li>
@@ -410,8 +410,8 @@
           <code class="ruby">      result = outcome.map do |word|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="26">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="21" data-linenumber="26">
+          <span class="hits">21</span>
           
           <code class="ruby">        word.join</code>
         </li>
@@ -596,8 +596,8 @@
           <code class="ruby">      &quot;8&quot; =&gt; &quot;111011101110101&quot;, &quot;9&quot; =&gt; &quot;11101110111011101&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="88" data-linenumber="23">
-          <span class="hits">88</span>
+        <li class="covered" data-hits="405" data-linenumber="23">
+          <span class="hits">405</span>
           
           <code class="ruby">      &quot;0&quot; =&gt; &quot;1110111011101110111&quot;}</code>
         </li>
@@ -698,8 +698,8 @@
           <code class="ruby">      word.upcase.each_char.map do |letter|</code>
         </li>
       
-        <li class="covered" data-hits="49" data-linenumber="11">
-          <span class="hits">49</span>
+        <li class="covered" data-hits="273" data-linenumber="11">
+          <span class="hits">273</span>
           
           <code class="ruby">        letter_encoder.encode(letter)</code>
         </li>
@@ -917,8 +917,8 @@
     <h3>lib/file_encoder.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>39</b> relevant lines. 
-      <span class="green"><b>39</b> lines covered</span> and
+      <b>38</b> relevant lines. 
+      <span class="green"><b>38</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -974,14 +974,14 @@
           <code class="ruby">    def initialize</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="9">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
           <code class="ruby">      @to_send_to_files = {}</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="10">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
           <code class="ruby">      @encoder = ParaMorse::Encoder.new</code>
         </li>
@@ -1058,14 +1058,14 @@
           <code class="ruby">      sorting.map! do |string|</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="23">
-          <span class="hits">22</span>
+        <li class="covered" data-hits="246" data-linenumber="23">
+          <span class="hits">246</span>
           
           <code class="ruby">        if string.length == 0</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="24">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="40" data-linenumber="24">
+          <span class="hits">40</span>
           
           <code class="ruby">          string = &quot;0000000&quot;</code>
         </li>
@@ -1076,8 +1076,8 @@
           <code class="ruby">        else</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="26">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="206" data-linenumber="26">
+          <span class="hits">206</span>
           
           <code class="ruby">          string = string</code>
         </li>
@@ -1184,8 +1184,8 @@
           <code class="ruby">      empty_array = []</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="44">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="13" data-linenumber="44">
+          <span class="hits">13</span>
           
           <code class="ruby">      m.each_slice(nof) { |h| empty_array &lt;&lt; h }</code>
         </li>
@@ -1202,14 +1202,14 @@
           <code class="ruby">      empty_array.each_with_index do |wow, index|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="12" data-linenumber="47">
+          <span class="hits">12</span>
           
           <code class="ruby">        wow.each_with_index do |k, i|</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="48">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="123" data-linenumber="48">
+          <span class="hits">123</span>
           
           <code class="ruby">          to_send_to_files[i] &lt;&lt; k</code>
         </li>
@@ -1316,24 +1316,6 @@
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="67">
-          <span class="hits">1</span>
-          
-          <code class="ruby">file_enc = ParaMorse::FileEncoder.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="68">
-          
-          
-          <code class="ruby"># file_enc.encode(&quot;plain.txt&quot;, 11, &quot;output*.txt&quot;)</code>
-        </li>
-      
     </ol>
   </pre>
 </div>
@@ -1394,8 +1376,8 @@
           <code class="ruby">    def decode(code)</code>
         </li>
       
-        <li class="covered" data-hits="33" data-linenumber="8">
-          <span class="hits">33</span>
+        <li class="covered" data-hits="126" data-linenumber="8">
+          <span class="hits">126</span>
           
           <code class="ruby">      dictionary.key(code)</code>
         </li>
@@ -1508,8 +1490,8 @@
           <code class="ruby">    def encode(letter)</code>
         </li>
       
-        <li class="covered" data-hits="53" data-linenumber="8">
-          <span class="hits">53</span>
+        <li class="covered" data-hits="277" data-linenumber="8">
+          <span class="hits">277</span>
           
           <code class="ruby">      dictionary[letter.upcase]</code>
         </li>
@@ -2375,7 +2357,7 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 11, file_enc.decode(&quot;test/test_2.txt&quot;, &quot;test/test_1.txt&quot;)</code>
+          <code class="ruby">    assert_equal 123, file_enc.decode(&quot;test/test_2.txt&quot;, &quot;test/test_1.txt&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -2465,7 +2447,7 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    result = &quot;101010100010001011101010001011101010001110111011100000001011101110001110111011100010111010001011101010001110101&quot;</code>
+          <code class="ruby">    result = &quot;11101110001011101000000010111011101000101110100010001010100010100011101010001000111010001110000000101110001110100011101010000000111011100010111010001010100000001110101010001010111000101010001010101000000011101110001110101110111000000010101110100010111010001010001000111010001110101000000011100010101010001000000010101011100010100011101011101000100000001011101110100010111010001000101010001010001110101000100011101000111000000010111000111010001110101000000011101010001011101000000011101010100010100011101010001000111010000000111011100010111000111010111011100011101110111000101110100000001011101000101110001011101110001011101010001010001110100011101110100010101000000011101011101000101010100010100010001010111010000000101010001011101110100010100010111010100010111010100010001011101000000011101011101000101110101000100010111010001110111010001110101110111000000011101110001000111011100011101010100010001011101000101010000000111011101110001010111010000000111010111010001110111011100011101000111011101000101110100010001010100010101&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
