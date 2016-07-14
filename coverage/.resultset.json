@@ -368,8 +368,6 @@
         1,
         null,
         null,
-        null,
-        null,
         null
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/lib/para_encoder.rb": [
@@ -748,7 +746,7 @@
         null
       ]
     },
-    "timestamp": 1468462492
+    "timestamp": 1468462548
   },
   "RSpec": {
     "coverage": {
