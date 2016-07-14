@@ -13,7 +13,7 @@ module ParaMorse
       input = File.read(plain_text)
       output = encoder.encode(input)
       mutated = mult_files_splitter(output)
-      sort_writer(nof, encoded_files, output)
+      sort_writer(nof, encoded_files, mutated, output)
     end
 
     def mult_files_splitter(output)
@@ -27,10 +27,10 @@ module ParaMorse
       end
     end
 
-    def sort_writer(nof, encoded_files, output)
+    def sort_writer(nof, encoded_files, mutated, output)
       file_counter = (0..(nof -1)).to_a
       if encoded_files.include?("*")
-        file_breaker(file_counter, nof, output)
+        file_breaker(file_counter, nof, mutated)
       else
         File.write(encoded_files, output)
       end
