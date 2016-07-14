@@ -14,7 +14,7 @@ module ParaMorse
       @decoder = ParaMorse::Decoder.new
     end
 
-    def decode(encoded_text, plain_text)
+    def decode(nof, encoded_text, plain_text)
       input = File.read(encoded_text)
       output = decoder.decode(input)
       File.write(plain_text, output)
@@ -23,4 +23,4 @@ module ParaMorse
 end
 
 file_enc = ParaMorse::FileDecoder.new
-file_enc.decode("encoded.txt", "plain.txt")
+file_enc.decode(1, "encoded.txt", "plain.txt")
