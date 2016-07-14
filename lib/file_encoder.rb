@@ -21,7 +21,7 @@ module ParaMorse
       sorting = output.gsub("0000000", "--").gsub("000", "-").split("-")
       sorting.map! do |string|
         if string.length == 0
-          string = "0000000"
+          string = "0"
         else
           string = string
         end
@@ -37,13 +37,12 @@ module ParaMorse
       end
     end
 
-
-    def something(file_counter, nof, mutated)
+    def final_mutator(file_counter, nof, mutated)
       m = mutated
-      empty_array = []
-      m.each_slice(nof) { |h| empty_array << h }
+      base = []
+      m.each_slice(nof) { |h| base << h }
       file_counter.each_with_index { |k, i| to_send_to_files[i] = [] }
-      empty_array.each_with_index do |wow, index|
+      base.each_with_index do |wow, index|
         wow.each_with_index do |k, i|
           to_send_to_files[i] << k
         end
@@ -51,7 +50,7 @@ module ParaMorse
     end
 
     def file_breaker(file_counter, nof, mutated)
-      something(file_counter, nof, mutated)
+      final_mutator(file_counter, nof, mutated)
       file_counter.each_with_index do |number, index|
         if index < 10
           File.write("output0#{number}.txt", to_send_to_files[index].join("000"))

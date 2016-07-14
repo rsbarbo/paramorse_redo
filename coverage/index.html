@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-13T19:33:11-06:00">2016-07-13T19:33:11-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-13T20:14:52-06:00">2016-07-13T20:14:52-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         6.4
+         7.5
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>18</b> files in total.
-    <b>449</b> relevant lines. 
-    <span class="green"><b>449</b> lines covered</span> and
+    <b>19</b> files in total.
+    <b>464</b> relevant lines. 
+    <span class="green"><b>464</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -67,7 +67,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>135.7</td>
+        <td>165.0</td>
       </tr>
       
       <tr>
@@ -77,7 +77,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>36.3</td>
+        <td>47.5</td>
       </tr>
       
       <tr>
@@ -93,11 +93,11 @@
       <tr>
         <td class="strong"><a href="#ede1a73fcb317c15c36ed37e4cfbc84df44bf07d" class="src_link" title="lib/file_encoder.rb">lib/file_encoder.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>65</td>
+        <td>64</td>
         <td>38</td>
         <td>38</td>
         <td>0</td>
-        <td>18.7</td>
+        <td>27.3</td>
       </tr>
       
       <tr>
@@ -117,7 +117,17 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>35.5</td>
+        <td>46.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0c428754cab5056e56116ef71ca4f9262b6aeb51" class="src_link" title="lib/para_encoder.rb">lib/para_encoder.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>20</td>
+        <td>9</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -203,11 +213,11 @@
       <tr>
         <td class="strong"><a href="#ce1d33cdf8f00d2ef607bd261b1ecb8da34c6981" class="src_link" title="test/para_encoder_test.rb">test/para_encoder_test.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>13</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -596,8 +606,8 @@
           <code class="ruby">      &quot;8&quot; =&gt; &quot;111011101110101&quot;, &quot;9&quot; =&gt; &quot;11101110111011101&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="405" data-linenumber="23">
-          <span class="hits">405</span>
+        <li class="covered" data-hits="493" data-linenumber="23">
+          <span class="hits">493</span>
           
           <code class="ruby">      &quot;0&quot; =&gt; &quot;1110111011101110111&quot;}</code>
         </li>
@@ -686,26 +696,26 @@
           <code class="ruby">    def encode(word)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="9">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
           
           <code class="ruby">      letter_encoder = ParaMorse::LetterEncoder.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="7" data-linenumber="10">
+          <span class="hits">7</span>
           
-          
-          <code class="ruby">      word.upcase.each_char.map do |letter|</code>
+          <code class="ruby">      variable = word.upcase.each_char.map do |letter|</code>
         </li>
       
-        <li class="covered" data-hits="273" data-linenumber="11">
-          <span class="hits">273</span>
+        <li class="covered" data-hits="361" data-linenumber="11">
+          <span class="hits">361</span>
           
           <code class="ruby">        letter_encoder.encode(letter)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="12">
-          <span class="hits">6</span>
+        <li class="never" data-hits="" data-linenumber="12">
+          
           
           <code class="ruby">      end.join(&quot;000&quot;)</code>
         </li>
@@ -974,14 +984,14 @@
           <code class="ruby">    def initialize</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="9">
+          <span class="hits">3</span>
           
           <code class="ruby">      @to_send_to_files = {}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
           <code class="ruby">      @encoder = ParaMorse::Encoder.new</code>
         </li>
@@ -1004,26 +1014,26 @@
           <code class="ruby">    def encode(plain_text, nof = 0, encoded_files)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="14">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="14">
+          <span class="hits">3</span>
           
           <code class="ruby">      input = File.read(plain_text)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="15">
+          <span class="hits">3</span>
           
           <code class="ruby">      output = encoder.encode(input)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">      mutated = mult_files_splitter(output)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="17">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
           
           <code class="ruby">      sort_writer(nof, encoded_files, mutated, output)</code>
         </li>
@@ -1046,28 +1056,28 @@
           <code class="ruby">    def mult_files_splitter(output)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
           
           <code class="ruby">      sorting = output.gsub(&quot;0000000&quot;, &quot;--&quot;).gsub(&quot;000&quot;, &quot;-&quot;).split(&quot;-&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="22">
+          <span class="hits">3</span>
           
           <code class="ruby">      sorting.map! do |string|</code>
         </li>
       
-        <li class="covered" data-hits="246" data-linenumber="23">
-          <span class="hits">246</span>
+        <li class="covered" data-hits="333" data-linenumber="23">
+          <span class="hits">333</span>
           
           <code class="ruby">        if string.length == 0</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="24">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="56" data-linenumber="24">
+          <span class="hits">56</span>
           
-          <code class="ruby">          string = &quot;0000000&quot;</code>
+          <code class="ruby">          string = &quot;0&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
@@ -1076,8 +1086,8 @@
           <code class="ruby">        else</code>
         </li>
       
-        <li class="covered" data-hits="206" data-linenumber="26">
-          <span class="hits">206</span>
+        <li class="covered" data-hits="277" data-linenumber="26">
+          <span class="hits">277</span>
           
           <code class="ruby">          string = string</code>
         </li>
@@ -1112,20 +1122,20 @@
           <code class="ruby">    def sort_writer(nof, encoded_files, mutated, output)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="32">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="32">
+          <span class="hits">3</span>
           
           <code class="ruby">      file_counter = (0..(nof -1)).to_a</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="33">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="33">
+          <span class="hits">3</span>
           
           <code class="ruby">      if encoded_files.include?(&quot;*&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="34">
+          <span class="hits">2</span>
           
           <code class="ruby">        file_breaker(file_counter, nof, mutated)</code>
         </li>
@@ -1160,157 +1170,151 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="41">
+        <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
-          <code class="ruby">    def something(file_counter, nof, mutated)</code>
+          <code class="ruby">    def final_mutator(file_counter, nof, mutated)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="41">
+          <span class="hits">2</span>
           
           <code class="ruby">      m = mutated</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="42">
+          <span class="hits">2</span>
           
-          <code class="ruby">      empty_array = []</code>
+          <code class="ruby">      base = []</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="44">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="25" data-linenumber="43">
+          <span class="hits">25</span>
           
-          <code class="ruby">      m.each_slice(nof) { |h| empty_array &lt;&lt; h }</code>
+          <code class="ruby">      m.each_slice(nof) { |h| base &lt;&lt; h }</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="45">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="21" data-linenumber="44">
+          <span class="hits">21</span>
           
           <code class="ruby">      file_counter.each_with_index { |k, i| to_send_to_files[i] = [] }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="45">
+          <span class="hits">2</span>
           
-          <code class="ruby">      empty_array.each_with_index do |wow, index|</code>
+          <code class="ruby">      base.each_with_index do |wow, index|</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="47">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="23" data-linenumber="46">
+          <span class="hits">23</span>
           
           <code class="ruby">        wow.each_with_index do |k, i|</code>
         </li>
       
-        <li class="covered" data-hits="123" data-linenumber="48">
-          <span class="hits">123</span>
+        <li class="covered" data-hits="210" data-linenumber="47">
+          <span class="hits">210</span>
           
           <code class="ruby">          to_send_to_files[i] &lt;&lt; k</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">        end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">        end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
+        <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
           <code class="ruby">    def file_breaker(file_counter, nof, mutated)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="54">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="53">
+          <span class="hits">2</span>
           
-          <code class="ruby">      something(file_counter, nof, mutated)</code>
+          <code class="ruby">      final_mutator(file_counter, nof, mutated)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="55">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="54">
+          <span class="hits">2</span>
           
           <code class="ruby">      file_counter.each_with_index do |number, index|</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="56">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="19" data-linenumber="55">
+          <span class="hits">19</span>
           
           <code class="ruby">        if index &lt; 10</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="57">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="18" data-linenumber="56">
+          <span class="hits">18</span>
           
           <code class="ruby">          File.write(&quot;output0#{number}.txt&quot;, to_send_to_files[index].join(&quot;000&quot;))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="57">
           
           
           <code class="ruby">        else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
+        <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
           <code class="ruby">          File.write(&quot;output#{number}.txt&quot;, to_send_to_files[index].join(&quot;000&quot;))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="60">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby">        end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="61">
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="never" data-hits="" data-linenumber="62">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">end</code>
@@ -1490,8 +1494,8 @@
           <code class="ruby">    def encode(letter)</code>
         </li>
       
-        <li class="covered" data-hits="277" data-linenumber="8">
-          <span class="hits">277</span>
+        <li class="covered" data-hits="365" data-linenumber="8">
+          <span class="hits">365</span>
           
           <code class="ruby">      dictionary[letter.upcase]</code>
         </li>
@@ -1542,6 +1546,144 @@
           
           
           <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="0c428754cab5056e56116ef71ca4f9262b6aeb51">
+  <div class="header">
+    <h3>lib/para_encoder.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;pry&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;./lib/file_encoder&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module ParaMorse</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  class ParallelEncoder</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    attr_reader :file_encoder</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def initialize</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @file_encoder = ParaMorse::FileEncoder.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def encode_from_file(input_file, nof, output)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      file_encoder.encode(input_file, nof, output)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"># parallel_encoder = ParaMorse::ParallelEncoder.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"># parallel_encoder.encode_from_file(&#39;input.txt&#39;, 8, &#39;output*.txt&#39;)</code>
         </li>
       
     </ol>
@@ -2837,14 +2979,92 @@
     <h3>test/para_encoder_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
   <pre>
     <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;./test/helper_test&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;./lib/para_encoder&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ParallelEncoderTest &lt; Minitest::Test</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def test_something</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  parallel_encoder = ParaMorse::ParallelEncoder.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  assert_equal [0, 1, 2, 3, 4, 5, 6, 7], parallel_encoder.encode_from_file(&#39;input.txt&#39;, 8, &#39;output*.txt&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">end</code>
+        </li>
       
     </ol>
   </pre>

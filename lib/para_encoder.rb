@@ -16,5 +16,5 @@ module ParaMorse
   end
 end
 
-parallel_encoder = ParaMorse::ParallelEncoder.new
-parallel_encoder.encode_from_file('input.txt', 8, 'output*.txt')
+# parallel_encoder = ParaMorse::ParallelEncoder.new
+# parallel_encoder.encode_from_file('input.txt', 8, 'output*.txt')
