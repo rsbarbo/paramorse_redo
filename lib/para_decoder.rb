@@ -13,5 +13,6 @@ module ParaMorse
       file_decoder.decode(nof, input_file, output)
     end
 
+
   end
 end

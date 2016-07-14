@@ -20,4 +20,5 @@ class LetterDecoderTest < Minitest::Test
     assert_equal nil, letter_decoder.decode("10")
   end
 
+
 end

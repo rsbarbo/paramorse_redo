@@ -9,4 +9,5 @@ class FileDecoderTest < Minitest::Test
     assert_equal 123, file_enc.decode(0, "test/test_2.txt", "test/test_1.txt")
   end
 
+
 end

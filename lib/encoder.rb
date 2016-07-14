@@ -11,6 +11,6 @@ module ParaMorse
         letter_encoder.encode(letter)
       end.join("000")
     end
-  end
 
+  end
 end

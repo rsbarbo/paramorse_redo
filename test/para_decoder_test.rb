@@ -8,4 +8,5 @@ class ParallelDecoderTest < Minitest::Test
     assert_equal 0, parallel_decoder.decode_from_file(1,'input.txt', 'output*.txt')
   end
 
+
 end

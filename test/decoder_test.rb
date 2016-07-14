@@ -22,5 +22,6 @@ class DecoderTest < Minitest::Test
     decoder = ParaMorse::Decoder.new
     assert_equal "W",decoder.decode("101110111000")
   end
+  
 
 end

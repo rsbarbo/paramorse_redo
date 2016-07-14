@@ -11,6 +11,6 @@ module ParaMorse
     def dictionary_length
       dictionary
     end
-  end
 
+  end
 end

@@ -12,9 +12,6 @@ module ParaMorse
     def encode_from_file(input_file, nof, output)
       file_encoder.encode(input_file, nof, output)
     end
-    
+
   end
 end
-
-# parallel_encoder = ParaMorse::ParallelEncoder.new
-# parallel_encoder.encode_from_file('input.txt', 8, 'output*.txt')

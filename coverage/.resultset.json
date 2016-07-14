@@ -32,6 +32,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/lib/letter_decoder.rb": [
@@ -76,6 +77,7 @@
         null,
         null,
         494,
+        null,
         null,
         null,
         null
@@ -139,6 +141,7 @@
         1,
         null,
         null,
+        null,
         null
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/lib/encoder.rb": [
@@ -189,6 +192,7 @@
         1,
         null,
         null,
+        null,
         null
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/lib/file_decoder.rb": [
@@ -212,6 +216,7 @@
         null,
         null,
         null,
+        null,
         1,
         1
       ],
@@ -231,6 +236,7 @@
         1,
         1,
         1,
+        null,
         null,
         null,
         null
@@ -299,6 +305,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/test/letter_decoder_test.rb": [
@@ -322,6 +329,7 @@
         1,
         1,
         1,
+        null,
         null,
         null,
         null
@@ -348,6 +356,7 @@
         1,
         null,
         null,
+        null,
         null
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/test/para_decoder_test.rb": [
@@ -359,6 +368,7 @@
         1,
         1,
         1,
+        null,
         null,
         null,
         null
@@ -380,6 +390,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/test/para_encoder_test.rb": [
@@ -391,6 +402,7 @@
         1,
         1,
         1,
+        null,
         null,
         null,
         null
@@ -409,9 +421,6 @@
         null,
         1,
         1,
-        null,
-        null,
-        null,
         null,
         null,
         null,
@@ -533,6 +542,7 @@
         1,
         1,
         1,
+        null,
         null,
         null,
         null
@@ -708,6 +718,7 @@
         1,
         null,
         null,
+        null,
         null
       ],
       "/Users/raphabarbo/turing/module_1/projects/paramorse_redo/lib/streamer.rb": [
@@ -768,10 +779,11 @@
         null,
         null,
         null,
+        null,
         null
       ]
     },
-    "timestamp": 1468489482
+    "timestamp": 1468489805
   },
   "RSpec": {
     "coverage": {

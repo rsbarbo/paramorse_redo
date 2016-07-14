@@ -168,4 +168,5 @@ class StreamerTest < Minitest::Test
     assert_equal outcome, stream.encode
   end
 
+
 end

@@ -19,4 +19,5 @@ class LetterEncoderTest < Minitest::Test
     assert_equal nil, letter_encoder.encode("abc")
   end
 
+
 end
