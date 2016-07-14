@@ -15,8 +15,6 @@ module ParaMorse
       file_counter = (0..(nof -1)).to_a
       input = file_reading(file_counter, nof)
       remove_zeros(incoming_text)
-      output = decoder.decode(input)
-      File.write(plain_text, output)
     end
 
     def file_reading(file_counter, nof)
@@ -89,6 +87,7 @@ module ParaMorse
           decoder.decode(string)
         end
       end
+      pre_english.join
     end
 
   end
