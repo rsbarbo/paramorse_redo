@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-14T03:41:05-06:00">2016-07-14T03:41:05-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-14T03:44:42-06:00">2016-07-14T03:44:42-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -83,7 +83,7 @@
       <tr>
         <td class="strong"><a href="#9293d821339b981f69c67a529f9a023c7f446576" class="src_link" title="lib/file_decoder.rb">lib/file_decoder.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>26</td>
+        <td>22</td>
         <td>14</td>
         <td>14</td>
         <td>0</td>
@@ -820,22 +820,22 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#need to make file decoder more dinamic so it can support</code>
+          <code class="ruby">    def initialize</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">#the new feature ParallelDecoder that will demand the data</code>
+          <code class="ruby">      @decoder = ParaMorse::Decoder.new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">#to be parsed in a different way (Jul 13th, 3:26 pm)</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
@@ -847,82 +847,58 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">    def initialize</code>
+          <code class="ruby">    def decode(nof, encoded_text, plain_text)</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="14">
           <span class="hits">3</span>
           
-          <code class="ruby">      @decoder = ParaMorse::Decoder.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def decode(nof, encoded_text, plain_text)</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="18">
-          <span class="hits">3</span>
-          
           <code class="ruby">      input = File.read(encoded_text)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="19">
+        <li class="covered" data-hits="3" data-linenumber="15">
           <span class="hits">3</span>
           
           <code class="ruby">      output = decoder.decode(input)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="20">
+        <li class="covered" data-hits="3" data-linenumber="16">
           <span class="hits">3</span>
           
           <code class="ruby">      File.write(plain_text, output)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
           <code class="ruby">file_enc = ParaMorse::FileDecoder.new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
           <code class="ruby">file_enc.decode(1, &quot;encoded.txt&quot;, &quot;plain.txt&quot;)</code>
@@ -1783,7 +1759,7 @@
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -1921,7 +1897,7 @@
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">    </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">

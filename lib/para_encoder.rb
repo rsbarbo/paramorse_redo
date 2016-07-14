@@ -12,7 +12,7 @@ module ParaMorse
     def encode_from_file(input_file, nof, output)
       file_encoder.encode(input_file, nof, output)
     end
-
+    
   end
 end
 

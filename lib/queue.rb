@@ -12,7 +12,7 @@ module ParaMorse
       end
       queue
     end
-    
+
     def count
       queue.size
     end
