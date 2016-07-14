@@ -42,8 +42,8 @@ module ParaMorse
       base = []
       m.each_slice(nof) { |h| base << h }
       file_counter.each_with_index { |k, i| to_send_to_files[i] = [] }
-      base.each_with_index do |wow, index|
-        wow.each_with_index do |k, i|
+      base.each_with_index do |key, index|
+        key.each_with_index do |k, i|
           to_send_to_files[i] << k
         end
       end

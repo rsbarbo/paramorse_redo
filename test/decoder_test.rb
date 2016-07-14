@@ -23,4 +23,9 @@ class DecoderTest < Minitest::Test
     assert_equal "W",decoder.decode("101110111000")
   end
 
+  def test_it_can_grab_next_letter
+    decoder = ParaMorse::Decoder.new
+    assert_equal "SS",decoder.decode("10101 10101")
+  end
+
 end
