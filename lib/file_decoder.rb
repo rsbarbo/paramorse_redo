@@ -1,6 +1,7 @@
 require "./lib/decoder"
 require "./lib/letter_decoder"
 require "./lib/queue"
+require "pry"
 
 module ParaMorse
   class FileDecoder
@@ -43,7 +44,8 @@ module ParaMorse
           array
         end
       end
-      outcome = parsed.transpose
+      outcome = parsed.transpose.reverse
+      binding.pry
       nil_remover(outcome)
     end
 
@@ -84,6 +86,7 @@ module ParaMorse
         else
           string
         end
+        binding.pry
           decoder.decode(string)
         end
       end
