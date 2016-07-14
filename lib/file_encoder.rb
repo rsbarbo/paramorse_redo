@@ -3,9 +3,10 @@ require "pry"
 
 module ParaMorse
   class FileEncoder
-    attr_reader :encoder
+    attr_reader :encoder, :to_send_to_files
 
     def initialize
+      @to_send_to_files = {}
       @encoder = ParaMorse::Encoder.new
     end
 
@@ -36,19 +37,32 @@ module ParaMorse
       end
     end
 
-    def file_breaker(file_counter, nof, mutated)
-      file_counter.each_with_index do |number, index|
-        if index < 10
-          File.write("output0#{number}.txt", mutated[index])
-        else
-          File.write("output#{number}.txt", mutated[index])
+
+    def something(file_counter, nof, mutated)
+      m = mutated
+      empty_array = []
+      m.each_slice(nof) { |h| empty_array << h }
+      file_counter.each_with_index { |k, i| to_send_to_files[i] = [] }
+      empty_array.each_with_index do |wow, index|
+        wow.each_with_index do |k, i|
+          to_send_to_files[i] << k
         end
       end
     end
-    
+
+    def file_breaker(file_counter, nof, mutated)
+      something(file_counter, nof, mutated)
+      file_counter.each_with_index do |number, index|
+        if index < 10
+          File.write("output0#{number}.txt", to_send_to_files[index].join("000"))
+        else
+          File.write("output#{number}.txt", to_send_to_files[index].join("000"))
+        end
+      end
+    end
 
   end
 end
 
 file_enc = ParaMorse::FileEncoder.new
-file_enc.encode("plain.txt", 11, "output*.txt")
+# file_enc.encode("plain.txt", 11, "output*.txt")
